@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #fd6969;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+#contenedor-promociones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    background-color: #1d1d1d;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#panel-de-promociones {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #1d1d1d;
+    padding-bottom: 25px;
+}
+
+#panel-de-promociones article img {
+    max-width: 320px;
+    height: auto;
+    border-radius: 25px;
+}
+
+#contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin-top: 25px;
+    margin-left: 350px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #FFF;
+    border-color: #98252b;
+    border-radius: 25px;
+}
+
+#contenedor-de-tabla {
+    background-color: #FFF;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.encabezado-de-tabla {
+    background-color: #FFF;
+}
+
+.frase-preferencia {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.contenedor-boton-menu-completo {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #98252b;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    margin-left: 250px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #fe9d2d;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* tbody tr:nth-child(even) {
+    background-color: #fd6969;
+    color: white;
+} */
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Asegurar que el video se ajuste al ancho de la pantalla */
+#contenedor-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#contenedor-video video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #fd6969;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

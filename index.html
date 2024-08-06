@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprendimiento de Sándwiches</title>
+    <!-- <link rel="stylesheet" href="/styles/styles.css"> -->
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #fd6969;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+#contenedor-promociones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    background-color: #1d1d1d;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#panel-de-promociones {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #1d1d1d;
+    padding-bottom: 25px;
+}
+
+#panel-de-promociones article img {
+    max-width: 320px;
+    height: auto;
+    border-radius: 25px;
+}
+
+#contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin-top: 25px;
+    margin-left: 350px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #FFF;
+    border-color: #98252b;
+    border-radius: 25px;
+}
+
+#contenedor-de-tabla {
+    background-color: #FFF;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.encabezado-de-tabla {
+    background-color: #FFF;
+}
+
+.frase-preferencia {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.contenedor-boton-menu-completo {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #98252b;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    margin-left: 250px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #fe9d2d;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* tbody tr:nth-child(even) {
+    background-color: #fd6969;
+    color: white;
+} */
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Asegurar que el video se ajuste al ancho de la pantalla */
+#contenedor-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#contenedor-video video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #fd6969;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <h1 tabindex="0">La Sandwichería</h1>
+        <h2 tabindex="0">Los mejores sándwiches con las mejores salsas e ingredientes</h2>
+    </header>
+
+    <main role="main">
+        <section id="contenedor-promociones" aria-labelledby="promociones-titulo">
+            <h1 id="promociones-titulo" tabindex="0">Disfruta de nuestras promociones</h1>
+            <div>
+                <input type="submit" value="Ver todas las promociones" class="boton" tabindex="0" aria-label="Ver todas las promociones">
+            </div>
+        </section>
+
+        <section id="panel-de-promociones" aria-labelledby="promociones-imagenes">
+            <!-- <h2 id="promociones-imagenes" class="visually-hidden">Imágenes de promociones</h2> -->
+            <article>
+                <img src="sanduches con descuento.png" alt="Imagen de sándwiches con promoción especial" tabindex="0">
+            </article>
+            <article>
+                <img src="postres con descuento.png" alt="Imagen de postres con promoción especial" tabindex="0">
+            </article>
+            <article>
+                <img src="envios con promocion.png" alt="Imagen de envíos con promoción especial" tabindex="0">
+            </article>
+        </section>
+
+        <section id="contenedor-menu" aria-labelledby="menu-titulo">
+            <h1 id="menu-titulo" tabindex="0">Disfruta de nuestro menú</h1>
+            <div class="frase-preferencia">
+                <p tabindex="0">Gracias por preferirnos, elige entre las deliciosas opciones de nuestro menú</p>
+            </div>
+            <div class="contenedor-boton-menu-completo">
+                <input type="submit" value="Ver menú completo" class="boton" tabindex="0" aria-label="Ver menú completo">
+            </div>
+        </section>
+
+        <section id="contenedor-de-tabla" aria-labelledby="tabla-titulo">
+            <div class="encabezado-de-tabla">
+                <h3 id="tabla-titulo" tabindex="0">Nuestros Sándwiches</h3>
+                <p tabindex="0">Ofrecemos una variedad de sándwiches hechos con ingredientes frescos y salsas caseras.</p>
+            </div>
+            <table role="table" aria-describedby="tabla-titulo">
+                <thead>
+                    <tr>
+                        <th tabindex="0">Imagen</th>
+                        <th tabindex="0">Nombre</th>
+                        <th tabindex="0">Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td tabindex="0"><img src="sanduche de pollo.jpg" alt="Imagen de sándwich de pollo con salsa BBQ" tabindex="0"></td>
+                        <td tabindex="0">Sándwich de Pollo</td>
+                        <td tabindex="0">Pollo a la parrilla con salsa BBQ casera, lechuga y tomate.</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0"><img src="sanduche vegetariano.jpg" alt="Imagen de sándwich vegetariano con hummus" tabindex="0"></td>
+                        <td tabindex="0">Sándwich Vegetariano</td>
+                        <td tabindex="0">Hummus, vegetales frescos y pan integral.</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="0"><img src="sanduche de jamon y queso.jpg" alt="Imagen de sándwich de jamón y queso" tabindex="0"></td>
+                        <td tabindex="0">Sándwich de Jamón y Queso</td>
+                        <td tabindex="0">Jamón cocido, queso suizo y mostaza dijon.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contenedor-video" aria-labelledby="video-titulo">
+            <h2 id="video-titulo" tabindex="0">Video de nuestra tienda</h2>
+            <video controls tabindex="0" aria-label="Video de nuestra tienda">
+                <source src="VideoPromocional.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video. 
+            </video>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p tabindex="0">© 2024 Emprendimiento de Sándwiches. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
